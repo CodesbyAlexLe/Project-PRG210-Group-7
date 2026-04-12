@@ -51,11 +51,11 @@ return value;
 
 double Interface::getValidatedPositiveDouble()
 {
-    doubler value;
+    double value;
 
   while (true)
 {
-  cin >> value
+  cin >> value;
 
   if (cin.fail() || value <= 0)
 {
@@ -65,7 +65,7 @@ double Interface::getValidatedPositiveDouble()
 }
 else
 {
-  cin.ignore(numeric_limits<streamsize>::max(), '\n';
+  cin.ignore(numeric_limits<streamsize>::max(), '\n');
   return value;
 }
 }
