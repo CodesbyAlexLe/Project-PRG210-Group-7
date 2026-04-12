@@ -1,4 +1,3 @@
-Department.h
 #ifndef DEPARTMENT_H
 #define DEPARTMENT_H
 
