@@ -1,6 +1,6 @@
 # Project-PRG210-Group-7
 
-#Group 7:
+#Group 7: Team contributions
 - Jasraj Choker
 - Leif Josh Flores
 - Alex Le
@@ -31,5 +31,9 @@ Customer Interface
 - View cart
 - Check out and clear cart
 > ------------------------------------------------------------------------------------------------------------------------- <
-
+# Concepts used
+- OOP
+- Inheritance and Polymorphism
+- Dynamic memory Allocation
+- File handling
 
