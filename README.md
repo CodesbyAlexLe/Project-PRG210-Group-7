@@ -7,7 +7,7 @@
 - Boyiokim Jude Richard Ogar
   
 > ------------------------------------------------------------------------------------------------------------------------- <
-#Grocery Store Management System
+# Grocery Store Management System
 
 The Grocery Store Management System is a console-based application designed to streamline grocery store operations. It provides two separate interfaces:
 
