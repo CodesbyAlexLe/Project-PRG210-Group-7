@@ -76,7 +76,7 @@ void CustomerInterface::browseDepartments()
 
 for (int i = 0; i < TotalDepartments; i++)
 {
-  cout << i + 1 << ". " << StoreDepartment[i].getDepartmentName() << endl;
+  cout << i + 1 << ". " << StoreDepartments[i].getDepartmentName() << endl;
 }
 
 cout << "\n1. List Items of a Department" << endl;
@@ -118,7 +118,7 @@ else
 
 int deptIndex = deptChoice - 1;
 
-StoreDepartments[deptIndex].getTotalItems() == 0)
+if StoreDepartments[deptIndex].getTotalItems() == 0)
 {
   return;
 }
@@ -169,7 +169,7 @@ else
 cout << "Enter quantity to buy: ";
 int quantity = getValidatedPositiveInt();
 
-Product sleectedProduct = StoreDepartments[deptIndex].getItems()[itemChoice - 1];
+Product selectedProduct = StoreDepartments[deptIndex].getItems()[itemChoice - 1];
 cart.addToCart(selectProduct, quantity);
 
 cout << "Item added to cart successfully. " << endl;
