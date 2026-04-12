@@ -55,8 +55,39 @@ void Cart::listCartItems() const
       cout << i + 1 << ". " 
            << cartItems[i].getName()
            << " | Qty: " << quantities[i]
-           " | Price: $" << cartItems[i].getPrice() << endl;
+           << " | Price: $" << cartItems[i].getPrice() << endl;
   }
   cout << "Total with tax: $" << calculateTotal() << endl;
 }
+void Cart::checkout()
+{
+  if(isEmpty())
+  {
+    cout << "No items in the cart" << endl;
+    return;
+  }
 
+  cout << "Thank you for your purchase" << endl;
+  clearCart();
+}
+
+bool Cart::isEmpty() const
+{
+  return totalItems == 0;
+}
+
+void Cart::clearCart()
+{
+  delete[] cartItems;
+  delete[] quantities;
+
+  cartItems = nullptr;
+  quantities = nullptr;
+  totalItems = 0;
+  totalCost = 0.0;
+}
+
+double Cart::calculateTotal() const
+{
+  return totalCost * 1.13;
+}
