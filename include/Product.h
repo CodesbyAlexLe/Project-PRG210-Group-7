@@ -7,6 +7,7 @@ using namespace std;
 /*
   Product class
   It stores the basic information for each item, such as name, price, and quantity 
+  Manages items in the store and items selected by the customer
 */
 
 class Product {
@@ -21,5 +22,18 @@ public:
   // Initializes product with given name, price, and quantity
   Product(const char* name, double price, int quantity);
 
+  //Setting all product details
+  void set(const char* name, double price, int quantity);
+
+  //getter function
+  const char* getName() const; //Getting name
+  double getPrice() const; //Geting price
+  int getQuanitity() const; //Getting quality
+
+  //Updates the quantity of the product
+  void setQuantity(int quantity);
+
+  //Displays product details (name, price, quantity)
+  void display() const;
 };
 #endif
