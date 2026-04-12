@@ -10,9 +10,15 @@
  */
 class Interface {
 public:
-
+    virtual void showMenu() = 0;
+    virtual void handleMenu() = 0;
+    virtual ~Interface();
 
 protected:
+    int getValidatedInt(int min, int max);
+    int getValidatedPositiveInt();
+    double getValidatedPositiveDouble();
+    void getValidatedNonEmptyString(char* str, int size);
  
 };
 #endif
