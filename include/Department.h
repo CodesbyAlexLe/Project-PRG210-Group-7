@@ -15,6 +15,16 @@ public:
   //Constructors
      Department();
      Department(const char* name); 
+     ~Department();
+
+     void setDepartmentName(const char* name);
+     const char* getDepartmentName() const;
+
+     int getTotalItems() const;
+     Product* getItems() const;
+
+     void addItem(const Product& p);
+     void listItems() const;
 };
 
 #endif
