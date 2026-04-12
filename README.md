@@ -1,4 +1,4 @@
-# Project-PRG210-Group-7
+# Project-PRG210-Group-7 - PRG210
 
 #Group 7: Team contributions
 - Jasraj Choker
@@ -31,8 +31,8 @@ Customer Interface
 - Check out and clear cart
   
 # Concepts used
-- OOP
+- OOP (Object Oriented Programming)
 - Inheritance and Polymorphism
-- Dynamic memory Allocation
-- File handling
+- Dynamic Memory Allocation
+- File handling (CSV)
 
