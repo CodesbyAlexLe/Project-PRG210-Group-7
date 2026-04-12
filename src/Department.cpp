@@ -64,7 +64,7 @@ void Department::listItems() const
   cout << "No items in this department. " << endl;
   return;
 }
-for (int i = 0; i < totalItemsl i++)
+for (int i = 0; i < totalItems; i++)
 {
   cout << i + 1 << ". "
        << items[i].getName()
