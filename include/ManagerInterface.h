@@ -6,9 +6,11 @@
 class ManagerInterface: public Interface {
 
 public:
-
-private:
-
+    void run()
+    void listDepartments() const;
+    void addDepartment();
+    void addItemToDepartment();
+    void saveToCSV() const;
 };
 
 #endif
