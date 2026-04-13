@@ -3,11 +3,18 @@
 
 #include "Interface. h"
 
-class ManagerInterface: public Interface {
+class ManagerInterface: public Interface 
+{
 
 public:
+  void showMenu();
+  void handleMenu();
 
 private:
+  void listDepartments();
+  void addDepartment();
+  void addItemToDepartment();
+  void saveChangesToCSV();
 
 };
 
