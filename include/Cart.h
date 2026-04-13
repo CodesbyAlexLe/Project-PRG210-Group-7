@@ -19,13 +19,12 @@ public:
     Cart(); //Constructor
     ~Cart(); //Destructor - Frees dynamically allocated memory (cartItems and quantities)
 
-    void addToCart(const Product& p, int quantity);
-    void listCartItems() const;
-    void checkout();
-    bool isEmpty() const;
-    void clearCart();
-    double calculateTotal() const;
+    void addToCart(const Product& p, int quantity);  // Adds a product and quantity to the cart
+    void listCartItems() const; //Displays all items in the cart with their quanitites and prices
+    void checkout(); // Checkout of the cart
+    bool isEmpty() const; //Checks if the cart is empty
+    void clearCart(); //Clears the cart
+    double calculateTotal() const; //calculates total cost of the cart (+ the tax)
 };
-
 #endif
 
