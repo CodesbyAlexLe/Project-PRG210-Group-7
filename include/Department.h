@@ -1,6 +1,5 @@
 #ifndef DEPARTMENT_H
 #define DEPARTMENT_H
-
 #include "Product.h"
 using namespace std;
 
@@ -18,8 +17,12 @@ public:
     //Constructors
     Department(); //Default (empty)
     Department(const char* name); //Innitializes the deparments
+    Department(const Department& other); //Copy constructor to safely copy dynamic arrays
     //Destructor
     ~Department(); //Used to free the dynamically allocated items in the array
+
+    // Assignment operator to safely copy dynamic arrays
+    Department& operator=(const Department& other);
 
     void setDepartmentName(const char* name); //Sends and get department name
     const char* getDepartmentName() const;
