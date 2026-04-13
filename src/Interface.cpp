@@ -165,4 +165,3 @@ void Interface::getValidatedNonEmptyString(char* str, int size)
     }
 }
 
-}
