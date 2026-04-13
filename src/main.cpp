@@ -31,8 +31,12 @@ void loadCSV()
 
     // First line contains the total number of departments
     getline(file, line);
-    TotalDepartments = stoi(line);
-    StoreDepartments = new Department[TotalDepartments];
+if (line.empty())
+{
+    file.close();
+    return;
+}
+TotalDepartments = stoi(line);
 
     for (int i = 0; i < TotalDepartments; i++)
     {
