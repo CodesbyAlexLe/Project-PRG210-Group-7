@@ -1,7 +1,11 @@
 #ifndef MANAGERINTERFACE_H
 #define MANAGERINTERFACE_H
 
-#include "Interface. h"
+#include "Interface. h" //Including the base interface class
+
+/*
+
+*/
 
 class ManagerInterface: public Interface 
 {
@@ -15,7 +19,6 @@ private:
   void addDepartment();
   void addItemToDepartment();
   void saveChangesToCSV();
-
 };
 
 #endif
