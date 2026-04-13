@@ -1,7 +1,7 @@
 #ifndef MANAGERINTERFACE_H
 #define MANAGERINTERFACE_H
 
-#include "Interface. h" //Including the base interface class
+#include "Interface.h" //Including the base interface class
 
 /*
     Manager interface class
