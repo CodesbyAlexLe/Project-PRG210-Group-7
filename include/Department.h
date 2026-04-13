@@ -32,5 +32,3 @@ public:
 };
 
 #endif
-
-#endif
